@@ -1,0 +1,20 @@
+// Main SCSS file which includes all other style files by importing them
+// Base
+@import './base/base';
+// End Base //
+
+// Components
+@import './components/test/test';
+// End Components //
+
+// Libraries
+@import './libs/normalize.css';
+// End Libraries //
+
+// Utilities
+
+// End Utilities //
+
+// SASS Vars
+@import './vars/colors';
+// End SASS Vars //
