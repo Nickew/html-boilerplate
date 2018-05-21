@@ -1,23 +1,31 @@
 {
-  "name": "boilerplate",
-  "version": "1.0.0",
-  "description": "",
+  "name": "HTML Boilerplate",
+  "version": "1.1.0",
+  "description": "HTML/CSS/JS boilerplate using Gulp for handle changes in SCSS/JS.",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Nickew/html-boilerplate.git"
+  },
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Nickew",
+  "license": "MIT",
   "dependencies": {
     "normalize.css": "^8.0.0"
   },
   "devDependencies": {
-    "babel-preset-env": "^1.6.1",
+    "@babel/cli": "^7.0.0-beta.47",
+    "@babel/core": "^7.0.0-beta.47",
+    "@babel/preset-env": "^7.0.0-beta.47",
+    "@babel/register": "^7.0.0-beta.47",
     "browser-sync": "^2.23.6",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.1.0",
-    "gulp-babel": "^7.0.1",
+    "gulp-babel": "^8.0.0-beta.2",
     "gulp-cache": "^1.0.2",
     "gulp-clean-css": "^3.9.2",
     "gulp-concat": "^2.6.1",

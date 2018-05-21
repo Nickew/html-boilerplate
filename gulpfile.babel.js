@@ -57,7 +57,8 @@ gulp.task('styles', () => {
 });
 
 gulp.task('scripts', () => {
-  return gulp.src('src/assets/js/components/**/*.js')
+  del(['src/.tmp/main.min.js'])
+  return gulp.src('src/assets/js/*.js')
     .pipe(plumber({
       errorHandler: (error) =>  {
         console.log(error.message);
@@ -74,7 +75,7 @@ gulp.task('scripts', () => {
 
 gulp.task('default', ['styles', 'browser-sync'], () => {
   gulp.watch("src/assets/scss/components/**/*.scss", ['styles']);
-  gulp.watch("src/assets/js/components/**/*.js", ['scripts']);
+  gulp.watch("src/assets/js/*js", ['scripts']);
   gulp.watch("*.html", ['bs-reload']);
 });
 
