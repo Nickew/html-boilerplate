@@ -1,12 +1,11 @@
 {
-  "name": "HTML Boilerplate",
+  "name": "html-boilerplate",
   "version": "1.1.0",
   "description": "HTML/CSS/JS boilerplate using Gulp for handle changes in SCSS/JS.",
   "repository": {
     "type": "git",
     "url": "git://github.com/Nickew/html-boilerplate.git"
   },
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "gulp"
