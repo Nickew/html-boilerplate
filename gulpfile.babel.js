@@ -75,8 +75,8 @@ gulp.task('scripts', () => {
 
 gulp.task('default', ['styles', 'browser-sync'], () => {
   gulp.watch("src/assets/scss/components/**/*.scss", ['styles']);
-  gulp.watch("src/assets/js/*js", ['scripts']);
-  gulp.watch("*.html", ['bs-reload']);
+  gulp.watch("src/assets/js/*.js", ['scripts']);
+  gulp.watch("src/*.html", ['bs-reload']);
 });
 
 gulp.task('removedist', () => {
